@@ -1,0 +1,36 @@
+<%- include("partials/header.ejs") %>
+
+<link rel="stylesheet" href="styles/main.css">
+<body>
+
+    <div class="container">
+        <h1>Welcome to my Blog!</h1>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+
+        <h2>Recent Posts</h2>
+        
+        <% if(locals.title && locals.content) { %>
+            <h3><%= title %></h3>
+            <p><%= content %></p>
+        <% } else { %>
+            <p>No posts available yet.</p>
+        <% } %>
+        <div class="container2">
+            <h1>Create Blog Post</h1>
+            <form action="/submit" method="POST">
+                <label for="title">Blog Title</label>
+                <input type="text" id="title" name="title" placeholder="Enter the blog title" required>
+    
+                <label for="content">Blog Content</label>
+                <textarea id="content" name="content" rows="10" placeholder="Write your blog post here..." required></textarea>
+    
+                <button type="submit">Submit Post</button>
+            </form>
+        </div>    
+    </div>
+</body>
+</html>
+
+<%- include("partials/footer.ejs") %>

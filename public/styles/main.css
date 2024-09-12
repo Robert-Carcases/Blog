@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212; /* Dark background for the entire page */
+    color: #E0E0E0; /* Light text color for readability */
+}
+
+.container2 {
+    width: 90%;
+    margin: 20px auto;
+    background: #1E1E1E; /* Slightly lighter dark gray for container background */
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* Darker shadow for better contrast */
+    border-radius: 8px; /* Rounded corners for a modern look */
+}
+
+.container {
+    width: 50%;
+    margin: 50px auto;
+    background: #1E1E1E; /* Slightly lighter dark gray for container background */
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* Darker shadow for better contrast */
+    border-radius: 8px; /* Rounded corners for a modern look */
+}
+
+h1 {
+    text-align: center;
+    color: #E0E0E0; /* Light text color for headings */
+}
+
+p {
+    margin: 20px 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin: 5px 0 5px;
+    font-weight: bold;
+    color: #E0E0E0; /* Light text color for labels */
+}
+
+input[type="text"], textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #333; /* Darker border for input fields */
+    background-color: #2A2A2A; /* Dark background for input fields */
+    color: #E0E0E0; /* Light text color for input fields */
+    border-radius: 5px;
+}
+
+input[type="file"] {
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px;
+    background-color: #4CAF50; /* Dark green for buttons */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45A049; /* Slightly darker green on hover */
+}
+
+footer {
+    margin-left: 10px;
+    color: #E0E0E0; /* Light text color for footer */
+}
